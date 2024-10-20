@@ -1,0 +1,196 @@
+body {
+    margin: 0px;
+}
+h1 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: clamp(40px, 4vw, 80px);
+    text-align: center;
+}
+h1.subject__title {
+    color: #66339950;
+}
+
+p {
+    text-align: center;
+    font-family: montserrat;
+    margin: 0px;
+    font-size: clamp(0.875rem, -0.375rem + 1.563vw, 1.5rem)
+    }
+
+img.in-button {
+    width: 100%;
+    /* width: 9vw; */
+    height: auto;
+    /* max-width: 250px; */
+    align-self: center;
+    /* ru
+    style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:fill
+    */
+}
+
+.subject__buttons {
+    box-sizing: border-box;
+    display: flex;
+    padding-left: 64px;
+    padding-right: 64px;
+    gap: 16px;
+    width: 100vw;
+    height: 256px;
+}
+
+.subject__button {
+    /* position: relative; */
+    box-sizing: border-box;
+    padding: 32px;
+    border: 1px solid #00000000;
+    border-radius: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* width: calc((100vw-32px*5-64px)/6 - 5px); */
+    width: 100%;
+    height: 236px;
+}
+
+.subject__ru-button {
+    background-color: #BFB5EC;
+    box-shadow: 0px 20px 0px 0px #E1DCF6;
+    border-radius: 20px;
+}
+
+.subject__math-button {
+    background-color: #B4BFD6;
+    box-shadow: 0px 20px 0px 0px #DCE1EC;
+    border-radius: 20px;
+}
+
+.subject__social-button {
+    background-color: #D6B4CB;
+    box-shadow: 0px 20px 0px 0px #ECDCE6;
+    border-radius: 20px;
+}
+
+.subject__en-button {
+    background-color: #D6B4B4;
+    box-shadow: 0px 20px 0px 0px #ECDCDC;
+    border-radius: 20px;
+}
+
+.subject__question-button {
+    background-color: #F0D4BB;
+    /* box-shadow: 0px 20px 0px 0px #F0D4BB20; */
+    border-radius: 20px;
+}
+
+.subject__bio-button {
+    background-color: #BED6B4;
+    box-shadow: 0px 20px 0px 0px #E1ECDC;
+    border-radius: 20px;
+}
+
+/* .subject__bio-button-img-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff80;
+} */
+
+.img__ru-button{
+    max-width: 166px;
+}
+
+.img__math-button{
+    max-width: 159px;
+}
+
+.img__social-button{
+ max-width: 138px;
+}
+
+.img__en-button{
+ max-width: 138px;
+}
+
+.img__question-button{
+ max-width: 180px;
+}
+
+.img__bio-button{
+    max-width: 172px;
+}
+
+/* ---- */
+
+.subject__teacher-title {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 32px;
+    gap: -40px;
+}
+h1.subject__teachers {
+    color: #F0D4BB;
+    text-align: center;
+}
+
+h2.subject__name {
+    text-align: center;
+    color: #B8B5BC;
+    margin: 0px;
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+.subject__teacher-description-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.subject__teacher-description-text {
+    text-align: left;
+    margin: 16px;
+}
+
+.subject__teacher-description {
+    background-color: #F0D4BB;
+    border-radius: 25px;
+}
+
+.subject__teacher-description-1 {
+    width: 40%;
+}
+
+.subject__teacher-description-2 {
+    
+    width: 60%;
+}
+
+.subject__teacher-description-3 {
+    width: 45%;
+}
+
+.subject__teacher-description-4 {
+    width: 100%;
+}
+
+.subject__teacher-stack {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: space-between;
+    height: 60vh;
+}
+
+.subject__teacher-image-block {
+    /* max-height: 60vh; */
+    display: flex;
+    align-items: flex-end;
+    margin-left: -600px;
+}
+
+.subject__teacher-image {
+    height: 100%;
+    max-height: 450px;
+}
+    
