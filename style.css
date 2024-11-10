@@ -1,10 +1,24 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+b {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
 body {
     margin: 0px;
 }
 h1 {
     margin-top: 16px;
     margin-bottom: 8px;
-    font-size: clamp(40px, 4vw, 80px);
+    /* font-size: clamp(40px, 4vw, 80px); */
     text-align: center;
 }
 h1.subject__title {
@@ -13,10 +27,39 @@ h1.subject__title {
 
 p {
     text-align: center;
-    font-family: montserrat;
-    margin: 0px;
-    font-size: clamp(0.875rem, -0.375rem + 1.563vw, 1.5rem)
+    margin: 0px; 
+    /* font-size: clamp(0.875rem, -0.375rem + 1.563vw, 1.5rem) */
+}
+
+@media screen and (min-width: 900px) {
+    p {
+        font-size: 3vw;
+        color: red;
     }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    p {
+        font-size: 16px;
+        color: green;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    p {
+        font-size: 1vw;
+        color: blue;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
 
 img.in-button {
     width: 100%;
@@ -43,7 +86,7 @@ img.in-button {
     /* position: relative; */
     box-sizing: border-box;
     padding: 32px;
-    border: 1px solid #00000000;
+    /* border: 1px solid #00000000; */
     border-radius: 25px;
     flex-grow: 1;
     display: flex;
@@ -52,6 +95,10 @@ img.in-button {
     /* width: calc((100vw-32px*5-64px)/6 - 5px); */
     width: 100%;
     height: 236px;
+}
+
+.subject__button:nth-child(5) {
+    border: 6px solid rgba(0, 0, 0, 0.25);;
 }
 
 .subject__ru-button {
@@ -82,6 +129,7 @@ img.in-button {
     background-color: #F0D4BB;
     /* box-shadow: 0px 20px 0px 0px #F0D4BB20; */
     border-radius: 20px;
+
 }
 
 .subject__bio-button {
@@ -90,11 +138,12 @@ img.in-button {
     border-radius: 20px;
 }
 
-/* .subject__bio-button-img-overlay {
+.subject__bio-button-img::before {
+    background-color: #ffffff80;
     width: 100%;
     height: 100%;
-    background-color: #ffffff80;
-} */
+    z-index: 2;
+}
 
 .img__ru-button{
     max-width: 166px;
@@ -105,15 +154,15 @@ img.in-button {
 }
 
 .img__social-button{
- max-width: 138px;
+    max-width: 138px;
 }
 
 .img__en-button{
- max-width: 138px;
+    max-width: 138px;
 }
 
 .img__question-button{
- max-width: 180px;
+    max-width: 180px;
 }
 
 .img__bio-button{
@@ -137,7 +186,7 @@ h2.subject__name {
     text-align: center;
     color: #B8B5BC;
     margin: 0px;
-    font-size: clamp(20px, 2vw, 40px);
+    /* font-size: clamp(20px, 2vw, 40px); */
 }
 
 .subject__teacher-description-block {
@@ -145,6 +194,7 @@ h2.subject__name {
     flex-direction: column;
     gap: 32px;
     width: 100%;
+    height: fit-content;
 }
 
 .subject__teacher-description-text {
@@ -179,18 +229,31 @@ h2.subject__name {
     flex-direction: row;
     background-color: aqua;
     justify-content: space-between;
-    height: 60vh;
+    width: 80vw;
+    max-height: 85vh;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .subject__teacher-image-block {
     /* max-height: 60vh; */
     display: flex;
-    align-items: flex-end;
-    margin-left: -600px;
+    width: 30%;
+    max-height: 50vh;
+    /* align-items: flex-end; */
+    margin-left: -100%;
+    margin-top: -40px;
+    /* width: fit-content;
+    height: fit-content; */
 }
 
 .subject__teacher-image {
-    height: 100%;
-    max-height: 450px;
-}
+    height: auto;
+    /* max-height: 320px; */
     
+}
+
+.teacher-name {
+    text-align: center;
+    font-size: 40pt;
+}
